@@ -1,0 +1,69 @@
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #ffffff;
+	background: #070a1b;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px; // отступы безопасности
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.logo {
+	transition: all 0.3s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.list {
+	display: flex;
+	align-items: center;
+
+	&__item {
+		width: 40px;
+		height: 40px;
+		padding: 7px;
+		border-radius: 50%;
+		transition: all 0.3s;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		&:hover {
+			background: #c1a1d2;
+			cursor: pointer;
+		}
+	}
+
+	&__link {
+	}
+}
