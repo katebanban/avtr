@@ -1,0 +1,33 @@
+.footer {
+	padding: 130px 0px;
+	background: #070a1b;
+
+	&__body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__policy {
+		transition: all 0.3s;
+
+		&:hover {
+			color: #c1a1d2;
+		}
+	}
+
+	&__logo {
+		margin: 0 auto;
+	}
+
+	&__list {
+	}
+}
+
+.list {
+	&__item {
+	}
+
+	&__link {
+	}
+}
