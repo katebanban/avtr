@@ -1,0 +1,30 @@
+.premier {
+	margin-bottom: 150px;
+
+	&__body {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 1 50%;
+
+		&:not(:last-child) {
+			margin-right: 60px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__image {
+	}
+
+	&__btn {
+	}
+
+	&__image-2 {
+	}
+}

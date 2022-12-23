@@ -449,6 +449,16 @@ body {
   background: #c1a1d2;
   cursor: pointer;
 }
+.title--section {
+  font-family: "Corporate A", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #f402a2;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
 .header {
   padding: 30px 0px;
 }
@@ -516,6 +526,7 @@ body {
 
 .first {
   position: relative;
+  margin-bottom: 150px;
 }
 .first__bg {
   position: absolute;
@@ -565,12 +576,47 @@ body {
   margin-bottom: 5px;
 }
 .first__text {
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 24px;
+  line-height: 120%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-bottom: 50px;
 }
 
+.concept {
+  margin-bottom: 150px;
+}
+.concept__body {
+  max-width: 900px;
+  margin-left: auto;
+}
+.concept__text {
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+.concept__image {
+  width: 100%;
+  height: 500px;
+}
+.concept__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.premier {
+  margin-bottom: 150px;
+}
+.premier__body {
+  display: flex;
+}
+.premier__column {
+  flex: 0 1 50%;
+}
+.premier__column:not(:last-child) {
+  margin-right: 60px;
+}
 .footer {
   padding: 130px 0px;
   background: #070a1b;
