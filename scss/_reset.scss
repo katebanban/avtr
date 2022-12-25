@@ -21,12 +21,6 @@ svg {
 //обращение ко всем ссылкам, у которых есть класс
 a[class] {
 	text-decoration: none;
-	color: inherit;
-	//line-height: 1;
-
-	//&:active {
-	//	color: inherit;
-	//}
 }
 
 .list-reset {
