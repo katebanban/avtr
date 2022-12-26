@@ -1,0 +1,64 @@
+.video {
+	margin-bottom: 150px;
+
+	&__body {
+	}
+
+	&__poster {
+		width: 100%;
+		height: 600px;
+		border-radius: 300px 0px 0px 0px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #f402a2;
+		color: #f402a2;
+		padding: 15px;
+		text-transform: uppercase;
+		font-family: "Corporate A", serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 120%;
+		transition: all 0.3s;
+
+		svg {
+			width: 25px;
+			height: 25px;
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+
+			path {
+				transition: all 0.3s;
+			}
+		}
+
+		span {
+			padding-top: 4px;
+		}
+
+		&:hover {
+			color: #53a1cb;
+			border-color: #53a1cb;
+
+			svg path {
+				fill: #53a1cb;
+			}
+		}
+	}
+}

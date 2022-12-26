@@ -3,7 +3,7 @@
 
 	&__body {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -11,7 +11,7 @@
 	}
 
 	&__logo {
-		margin: 0 auto;
+		margin-left: 150px;
 	}
 
 	&__list {
