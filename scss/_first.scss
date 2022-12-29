@@ -1,6 +1,8 @@
 .first {
+	background: #070a1b;
 	position: relative;
 	margin-bottom: 150px;
+	z-index: 2;
 
 	&__bg {
 		position: absolute;

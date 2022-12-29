@@ -6,16 +6,23 @@
 		gap: 15px 45px;
 	}
 
-	&__cell {
+	&__cell-one {
+		grid-row: 1/3;
 	}
 
 	&__cell-title {
 	}
 
 	&__cell-text {
+		line-height: 120%;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__image-1 {
+		grid-column: 2/5;
 		width: 100%;
 		height: 450px;
 
@@ -24,6 +31,19 @@
 			width: 100%;
 			height: 100%;
 		}
+	}
+
+	&__cell-two {
+		grid-row-end: -1;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__cell-three {
+		grid-column-end: -1;
+		grid-row-end: -1;
+		display: flex;
+		align-items: flex-end;
 	}
 
 	&__image-2 {

@@ -389,7 +389,7 @@ a[class] {
 html,
 body {
   scroll-behavior: smooth;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -399,7 +399,7 @@ body {
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
-  background: #070a1b;
+  background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
 }
 
 .no-scroll {
@@ -459,6 +459,7 @@ body {
 }
 
 .header {
+  background: #070a1b;
   padding: 30px 0px;
 }
 .header__body {
@@ -524,8 +525,10 @@ body {
 }
 
 .first {
+  background: #070a1b;
   position: relative;
   margin-bottom: 150px;
+  z-index: 2;
 }
 .first__bg {
   position: absolute;
@@ -728,7 +731,17 @@ body {
   grid-template-rows: auto auto;
   gap: 15px 45px;
 }
+.design__cell-one {
+  grid-row: 1/3;
+}
+.design__cell-text {
+  line-height: 120%;
+}
+.design__cell-text:not(:last-child) {
+  margin-bottom: 25px;
+}
 .design__image-1 {
+  grid-column: 2/5;
   width: 100%;
   height: 450px;
 }
@@ -737,6 +750,17 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.design__cell-two {
+  grid-row-end: -1;
+  display: flex;
+  align-items: flex-end;
+}
+.design__cell-three {
+  grid-column-end: -1;
+  grid-row-end: -1;
+  display: flex;
+  align-items: flex-end;
 }
 .design__image-2 {
   width: 100%;

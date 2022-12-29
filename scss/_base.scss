@@ -1,7 +1,7 @@
 html,
 body {
 	scroll-behavior: smooth;
-	height: 100%;
+	min-height: 100%;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 	font-size: 16px;
 	line-height: 120%;
 	color: #ffffff;
-	background: #070a1b;
+	background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
 }
 
 .no-scroll {
