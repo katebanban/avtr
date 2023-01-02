@@ -4,6 +4,7 @@
 		grid-template-columns: 255px 255px auto 330px;
 		grid-template-rows: auto auto;
 		gap: 15px 45px;
+		margin-bottom: 100px;
 	}
 
 	&__cell-one {
@@ -57,5 +58,44 @@
 			width: 100%;
 			height: 100%;
 		}
+	}
+}
+
+.design-slider {
+	padding-bottom: 25px;
+
+	&__slide {
+		width: 450px;
+		height: 280px;
+		margin: 0 30px;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.slick-track {
+		margin-left: -1.6%;
+	}
+
+	.slick-arrow {
+		width: 50px;
+		height: 25px;
+		cursor: pointer;
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		left: 50%;
+		left: 48.5%;
+	}
+
+	.arrow-left {
+		transform: translateX(-110%);
+	}
+
+	.arrow-right {
+		transform: translateX(120%);
 	}
 }
