@@ -65,6 +65,9 @@
 	}
 
 	&__btn--active {
+		position: relative;
+		z-index: 10;
+
 		span {
 			opacity: 0;
 		}
@@ -78,6 +81,45 @@
 			transform: rotate(-45deg);
 			top: 50%;
 			bottom: unset;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		left: -100%;
+		top: 0;
+		width: 100%;
+		padding: 100px 0px 50px;
+		background: #070a1b;
+		min-height: 100vh;
+		overflow: auto; //чтобы появился скролл при большом кол-ве пунктов меню
+		transition: left 0.3s;
+	}
+
+	&__list--active {
+		left: 0;
+		position: absolute;
+		z-index: 5;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link {
+		font-size: 24px;
+		line-height: 120%;
+		color: #fff;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		transition: all 0.3s;
+
+		&:hover {
+			color: #f402a2;
 		}
 	}
 }

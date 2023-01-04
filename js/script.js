@@ -10,12 +10,21 @@ $('.design-slider').slick({
 
 const menuBtn = document.querySelector('.menu__btn');
 const menuList = document.querySelector('.menu__list');
+const menuLinks = document.querySelectorAll('.menu__link')
 
+console.log(menuLinks);
 
 menuBtn.addEventListener('click', function () {
 	menuList.classList.toggle('menu__list--active');
 	menuBtn.classList.toggle('menu__btn--active');
 	document.querySelector('body').classList.toggle('no-scroll');
+	menuLinks.forEach((link) => {
+		link.addEventListener('click', () => {
+			menuList.classList.remove('menu__list--active');
+			menuBtn.classList.remove('menu__btn--active');
+			document.querySelector('body').classList.remove('no-scroll');
+		})
+	})
 });
 
 Fancybox.bind("[data-fancybox]", {
