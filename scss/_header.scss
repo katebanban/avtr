@@ -6,16 +6,32 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__menu {
+		@media (max-width: 768px) {
+			flex: 0 1 50%;
+		}
 	}
 
 	&__logo {
 		margin-left: 150px;
+
+		@media (max-width: 768px) {
+			margin-left: unset;
+			flex: 0 1 50%;
+		}
 	}
 
 	&__list {
+		@media (max-width: 768px) {
+			margin-top: 15px;
+			margin-left: auto;
+		}
 	}
 }
 

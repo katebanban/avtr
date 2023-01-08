@@ -40,6 +40,10 @@ body {
 
 	&:hover {
 		transform: scale(1.1);
+
+		@media (max-width: 768px) {
+			transform: none;
+		}
 	}
 }
 
@@ -54,8 +58,17 @@ body {
 		border-radius: 50%;
 		transition: all 0.3s;
 
+		@media (max-width: 480px) {
+			width: 35px;
+			height: 35px;
+		}
+
 		&:not(:last-child) {
 			margin-right: 30px;
+
+			@media (max-width: 1000px) {
+				margin-right: 10px;
+			}
 		}
 
 		&:hover {
