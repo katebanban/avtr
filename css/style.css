@@ -478,6 +478,12 @@ body {
   background: #070a1b;
   padding: 30px 0px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 25px 0px;
+    background: transparent;
+  }
+}
 .header__body {
   display: flex;
   justify-content: space-between;
@@ -500,11 +506,12 @@ body {
   .header__logo {
     margin-left: unset;
     flex: 0 1 50%;
+    height: 35px;
   }
 }
 @media (max-width: 768px) {
   .header__list {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: auto;
   }
 }
@@ -605,6 +612,11 @@ body {
   margin-bottom: 150px;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .first {
+    background: transparent;
+  }
+}
 .first__bg {
   position: absolute;
   top: 0;
@@ -615,6 +627,29 @@ body {
   border-radius: 400px 400px 0px 0px;
   overflow: hidden;
 }
+@media (max-width: 1440px) {
+  .first__bg {
+    border-radius: 300px 300px 0px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .first__bg {
+    border-radius: 220px 220px 0px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .first__bg {
+    position: relative;
+    height: 300px;
+    border-radius: 130px 130px 0px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .first__bg {
+    height: 230px;
+    border-radius: 100px 100px 0px 0px;
+  }
+}
 .first__bg img {
   position: absolute;
   top: 0;
@@ -624,6 +659,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 768px) {
+  .first__bg img {
+    position: relative;
+  }
+}
 .first__body {
   min-height: calc(100vh - 100px);
   display: flex;
@@ -631,6 +671,11 @@ body {
   align-items: center;
   justify-content: flex-end;
   position: relative;
+}
+@media (max-width: 768px) {
+  .first__body {
+    min-height: 100%;
+  }
 }
 .first__body::after {
   content: "";
@@ -648,9 +693,20 @@ body {
   font-size: 72px;
   line-height: 120%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 .first__title:not(:last-child) {
   margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .first__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .first__title {
+    font-size: 55px;
+  }
 }
 .first__text {
   font-size: 24px;
