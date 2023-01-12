@@ -615,6 +615,7 @@ body {
 @media (max-width: 768px) {
   .first {
     background: transparent;
+    margin-bottom: 75px;
   }
 }
 .first__bg {
@@ -718,6 +719,11 @@ body {
 .concept {
   margin-bottom: 150px;
 }
+@media (max-width: 768px) {
+  .concept {
+    margin-bottom: 75px;
+  }
+}
 .concept__body {
   max-width: 900px;
   margin-left: auto;
@@ -726,6 +732,11 @@ body {
   font-size: 24px;
   line-height: 120%;
   margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .concept__text {
+    font-size: 16px;
+  }
 }
 .concept__image {
   width: 100%;
@@ -736,6 +747,22 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1000px) {
+  .concept__image img {
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+@media (max-width: 768px) {
+  .concept__image {
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .concept__image {
+    height: 230px;
+  }
 }
 
 .premier {
