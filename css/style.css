@@ -888,6 +888,11 @@ body {
 .video {
   margin-bottom: 150px;
 }
+@media (max-width: 768px) {
+  .video {
+    margin-bottom: 75px;
+  }
+}
 .video__poster {
   width: 100%;
   height: 600px;
@@ -902,6 +907,24 @@ body {
 }
 .video__poster:not(:last-child) {
   margin-bottom: 25px;
+}
+@media (max-width: 1000px) {
+  .video__poster {
+    height: 450px;
+    border-radius: 230px 0px 0px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .video__poster {
+    height: 300px;
+    border-radius: 150px 0px 0px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .video__poster {
+    height: 195px;
+    border-radius: 110px 0px 0px 0px;
+  }
 }
 .video__btn {
   display: flex;
