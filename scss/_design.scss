@@ -5,10 +5,24 @@
 		grid-template-rows: auto auto;
 		gap: 15px 45px;
 		margin-bottom: 100px;
+
+		@media (max-width: 1000px) {
+			display: block;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__cell-one {
 		grid-row: 1/3;
+
+		@media (max-width: 1000px) {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
 	}
 
 	&__cell-title {
@@ -32,12 +46,32 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		@media (max-width: 1000px) {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			height: 300px;
+		}
+
+		@media (max-width: 480px) {
+			height: 230px;
+		}
 	}
 
 	&__cell-two {
 		grid-row-end: -1;
 		display: flex;
 		align-items: flex-end;
+
+		@media (max-width: 1000px) {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
 	}
 
 	&__cell-three {
@@ -57,6 +91,11 @@
 			object-fit: cover;
 			width: 100%;
 			height: 100%;
+		}
+
+		@media (max-width: 1000px) {
+			width: auto;
+			margin: 0 auto;
 		}
 	}
 
@@ -106,7 +145,12 @@
 		padding: 0px 15px;
 		display: flex;
 		justify-content: space-between;
-		//gap: 60px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			max-width: 100%;
+			margin-bottom: 75px;
+		}
 	}
 
 	&__box-column {
@@ -114,6 +158,11 @@
 
 		&:not(:last-child) {
 			margin-right: 60px;
+
+			@media (max-width: 768px) {
+				margin-right: unset;
+				margin-bottom: 25px;
+			}
 		}
 	}
 
