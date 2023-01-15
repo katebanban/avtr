@@ -1123,6 +1123,34 @@ body {
   border-radius: 450px 450px 0px 0px;
   overflow: hidden;
 }
+@media (max-width: 1440px) {
+  .design__image-bottom {
+    height: 600px;
+    border-radius: 300px 300px 0px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .design__image-bottom {
+    border-radius: 220px 220px 0px 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .design__image-bottom {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .design__image-bottom {
+    height: 300px;
+    border-radius: 160px 160px 0px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .design__image-bottom {
+    height: 195px;
+    border-radius: 100px 100px 0px 0px;
+  }
+}
 .design__image-bottom img {
   -o-object-fit: cover;
      object-fit: cover;
