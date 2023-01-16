@@ -2,15 +2,35 @@
 	padding: 130px 0px;
 	background: #070a1b;
 
+	@media (max-width: 1000px) {
+		padding: 65px 0px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 40px 0px;
+	}
+
 	&__body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__policy {
 		color: inherit;
 		transition: all 0.3s;
+
+		@media (max-width: 768px) {
+			order: 3;
+
+			&:not(:last-child) {
+				margin-top: 20px;
+			}
+		}
 
 		&:hover {
 			color: #c1a1d2;
@@ -19,9 +39,20 @@
 
 	&__logo {
 		margin: 0 auto;
+
+		@media (max-width: 768px) {
+			order: 1;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	&__list {
+		@media (max-width: 768px) {
+			order: 2;
+		}
 	}
 }
 

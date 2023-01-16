@@ -103,10 +103,18 @@
 		padding-bottom: calc(25px + 12.5px);
 		margin-bottom: 137.5px;
 
+		@media (max-width: 768px) {
+			margin-bottom: 62.5px;
+		}
+
 		&__slide {
 			width: 450px;
 			height: 280px;
 			margin: 0 30px;
+
+			@media (max-width: 480px) {
+				margin: 0;
+			}
 
 			img {
 				object-fit: cover;
@@ -117,6 +125,10 @@
 
 		.slick-track {
 			margin-left: -1.6%;
+
+			@media (max-width: 480px) {
+				margin-left: 0;
+			}
 		}
 
 		.slick-arrow {
@@ -126,16 +138,23 @@
 			position: absolute;
 			z-index: 10;
 			bottom: 0;
-			//left: 50%;
 			left: 48.5%;
 		}
 
 		.arrow-left {
 			transform: translateX(-110%);
+
+			@media (max-width: 768px) {
+				transform: translateX(-150%);
+			}
 		}
 
 		.arrow-right {
 			transform: translateX(120%);
+
+			@media (max-width: 768px) {
+				transform: translateX(75%);
+			}
 		}
 	}
 

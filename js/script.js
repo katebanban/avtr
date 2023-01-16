@@ -6,6 +6,15 @@ $('.design-slider').slick({
 	prevArrow: '<img class="arrow arrow-left" src="img/design/icons/arrow-left.svg" alt="arrow left">',
 	nextArrow: '<img class="arrow arrow-right" src="img/design/icons/arrow-right.svg" alt="arrow right">',
 	autoplay: true,
+	responsive: [
+		{
+			breakpoint: 481,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 const menuBtn = document.querySelector('.menu__btn');
